@@ -9,11 +9,9 @@ tags: [세연, 소유, Our Kind of Love, 속초]
 
 <hr>
 
+<img src="https://ourkindoflove.github.io/assets/img/sample/beach-promise1.png" alt="해변에서의 약속" style="max-width:100%; border-radius:12px;">
 
-
-<img src="/assets/img/sample/beach-promise1.png" alt="해변에서의 약속" style="max-width:100%; border-radius:12px;">
-
-<img src="/assets/img/sample/beach-promise2.png" alt="해변에서의 약속" style="max-width:100%; border-radius:12px;">
+<img src="https://ourkindoflove.github.io/assets/img/sample/beach-promise2.png" alt="해변에서의 약속" style="max-width:100%; border-radius:12px;">
 
 _(I love you. Those words alone can’t express everything...)_
 
