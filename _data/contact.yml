@@ -4,14 +4,11 @@
   icon: "fab fa-github"
 
 - type: twitter
-  icon: "fa-brands fa-x-twitter"
+  icon: "fa-brands fa-twitter"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
-- type: rss
-  icon: "fas fa-rss"
+- type: flower
+  icon: "fa-solid fa-transgender"
+  url: "https://youtu.be/agbpbVVA78U"
   noblank: true
 # Uncomment and complete the url below to enable more contact options
 #

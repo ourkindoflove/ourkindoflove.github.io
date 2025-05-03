@@ -1,7 +1,6 @@
 ---
 layout: compress
 ---
-
 <!doctype html>
 
 {% include origin-type.html %}
@@ -82,5 +81,10 @@ layout: compress
     {% endfor %}
 
     {% include_cached search-loader.html lang=lang %}
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('page-loaded');
+      });
+    </script>
   </body>
 </html>

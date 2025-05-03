@@ -8,3 +8,12 @@
 ';
 
 /* append your custom style below */
+
+body {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+body.page-loaded {
+  opacity: 1;
+}
