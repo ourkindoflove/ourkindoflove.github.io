@@ -3,7 +3,8 @@
   const dark  = "transparent_dark";
 
   function setTheme() {
-    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    // Chirpy 7.x는 data-mode 를 씀
+    const isDark = document.documentElement.getAttribute("data-mode") === "dark";
     const theme  = isDark ? dark : light;
 
     const iframe = document.querySelector("iframe.giscus-frame");
@@ -15,18 +16,16 @@
     );
   }
 
-  /* ① iframe 처음 뜰 때 감지 */
+  // iframe 로딩 감지
   const observer = new MutationObserver(() => {
-    const iframe = document.querySelector("iframe.giscus-frame");
-    if (iframe) {
+    if (document.querySelector("iframe.giscus-frame")) {
       setTheme();
-      observer.disconnect(); // 한 번만 실행
+      observer.disconnect();
     }
   });
-
   observer.observe(document.body, { childList: true, subtree: true });
 
-  /* ② 다크/라이트 토글 감지 */
+  // 모드 토글 버튼 클릭 시
   document.querySelector("#mode-toggle")?.addEventListener("click", () => {
     setTimeout(setTheme, 300);
   });
