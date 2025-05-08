@@ -8,10 +8,12 @@
     const theme = isDark ? DARK : LIGHT;
     const iframe = document.querySelector("iframe.giscus-frame");
     if (iframe) {
-      iframe.contentWindow.postMessage(
-        { giscus: { setConfig: { theme } } },
-        "https://giscus.app"
-      );
+    // iframe.src에서 origin을 뽑아 사용
+    const origin = new URL(iframe.src).origin;
+    iframe.contentWindow.postMessage(
+    { giscus: { setConfig: { theme } } },
+    origin
+    );
     }
   }
 
