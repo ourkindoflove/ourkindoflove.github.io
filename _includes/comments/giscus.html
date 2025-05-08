@@ -1,7 +1,7 @@
 <!-- https://giscus.app/ -->
 <script>
   (function () {
-    const themeMapper = Theme.getThemeMapper('light', 'dark_dimmed');
+    const themeMapper = Theme.getThemeMapper('light_high_contrast', 'transparent_dark');
     const initTheme = themeMapper[Theme.visualState];
 
     let lang = '{{ site.comments.giscus.lang | default: lang }}';
@@ -20,11 +20,10 @@
       'data-strict' : '{{ site.comments.giscus.strict | default: '0' }}',
       'data-reactions-enabled': '{{ site.comments.giscus.reactions_enabled | default: '1' }}',
       'data-emit-metadata': '0',
-      'data-theme': 'light_high_contrast',
-      'data-dark-theme': 'transparent_dark',
+      'data-theme': initTheme',
       'data-input-position': '{{ site.comments.giscus.input_position | default: 'bottom' }}',
       'data-lang': lang,
-      'data-loading': 'eager',
+      'data-loading': 'lazy',
       crossorigin: 'anonymous',
       async: ''
     };
