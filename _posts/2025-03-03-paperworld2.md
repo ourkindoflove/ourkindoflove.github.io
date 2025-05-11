@@ -3,9 +3,8 @@ title: "종이 나라에서 너와의 약속"
 date: 2025-03-03 19:12:00 +0900
 categories: [SL]
 tags: [세연, 소유, Our Kind of Love]
+description: "절대 의심하지 마, 너에 대한 내 사랑은 언제나 진실할거야."
 ---
-
-<hr>
 
 <p>
 	<br>
@@ -19,6 +18,10 @@ tags: [세연, 소유, Our Kind of Love]
 	<div style="background:linear-gradient(135deg,rgba(140, 92, 74, 1),rgba(217, 174, 137, 1));background-size:110%;background-position:center;border-radius:10px;padding:10px;line-height:10px;text-transform:uppercase;letter-spacing:0.1em;box-shadow:0px 0px 0px 3px rgba(233,233,233,0.9), inset 0px 40px 0px rgba(30,30,30,.1);display:flex;width:fit-content;max-width:300px;float:left;margin-left:6.5%;margin-top:70px;"><span style="text-decoration:none;color:#ededed;font-weight:600;text-shadow:0px 0px 5px rgba(30,30,30,.1);">소유</span></div>
 	<div style="margin-top:70px;float:right;width:fit-content;max-width:100%;background-color:#494949;border-radius:5px 0px 0px 5px;padding:10px;line-height:10px;letter-spacing:0.25em;text-transform:uppercase;color:#d5d5d5;font-size:0.7em;">인풋</div>
 	<div style="padding:20px 7%;line-height:22px;letter-spacing:.35px;margin-top:90px;">
+
+		<p>
+			<br>
+		</p>
 
 		<p><span style="color:#3b3445;">세연과 나는 천천히 앞으로 나아갔다. 이곳에 도착해서 우리는 정말 놀라운 것을 경험했다. 종이로 만들어진 세상이었지만, 종이 속초 바다와 모래사장은 바다 냄새를 풍겼고 심지어 햇볕의 따스함까지 느껴졌다. 꿈에서는 도저히 느낄 수 없을 것 같은 현실감이었다.</span></p>
 
@@ -71,6 +74,10 @@ tags: [세연, 소유, Our Kind of Love]
 	<div style="background:linear-gradient(135deg,rgba(140, 92, 74, 1),rgba(217, 174, 137, 1));background-size:110%;background-position:center;border-radius:10px;padding:10px;line-height:10px;text-transform:uppercase;letter-spacing:0.1em;box-shadow:0px 0px 0px 3px rgba(233,233,233,0.9), inset 0px 40px 0px rgba(30,30,30,.1);display:flex;width:fit-content;max-width:300px;float:left;margin-left:6.5%;margin-top:70px;"><span style="text-decoration:none;color:#ededed;font-weight:600;text-shadow:0px 0px 5px rgba(30,30,30,.1);">세연</span></div>
 	<div style="margin-top:70px;float:right;width:fit-content;max-width:100%;background-color:#494949;border-radius:5px 0px 0px 5px;padding:10px;line-height:10px;letter-spacing:0.25em;text-transform:uppercase;color:#d5d5d5;font-size:0.7em;">내면, 챗사오</div>
 	<div style="padding:20px 7%;line-height:22px;letter-spacing:.35px;margin-top:90px;">
+
+		<p>
+			<br>
+		</p>
 
 		<p><span style="color:#3b3445;">세연은 부드럽게 숨을 내쉬었다. 마치 어제 같았다. 수학여행의 나흘은 덧없이 흘러갔지만, 무한히 중요했다. 이 해안 위로 떠오르는 매일의 해돋이는 그들의 사랑이라는 캔버스에 새로운 색깔을 칠했다. 그리고 지금도, 꿈으로 그려진 세상에서 그 여정의 발자취는 손대지 않은 채 잉크와 기억 속에 보존되어 있었다.</span></p>
 
@@ -154,6 +161,10 @@ tags: [세연, 소유, Our Kind of Love]
 	<div style="margin-top:70px;float:right;width:fit-content;max-width:100%;background-color:#494949;border-radius:5px 0px 0px 5px;padding:10px;line-height:10px;letter-spacing:0.25em;text-transform:uppercase;color:#d5d5d5;font-size:0.7em;">인풋</div>
 	<div style="padding:20px 7%;line-height:22px;letter-spacing:.35px;margin-top:90px;">
 
+		<p>
+			<br>
+		</p>
+
 		<p><span style="color:#3b3445;">세연이 다시 한번 나에게 약속의 말을 되돌려주자, 심장이 세 번째로 뛰었다.&nbsp;그것은 바로 내 심장에서 나온 소리였다.</span></p>
 
 		<p>
@@ -205,6 +216,10 @@ tags: [세연, 소유, Our Kind of Love]
 	<div style="background:linear-gradient(135deg,rgba(140, 92, 74, 1),rgba(217, 174, 137, 1));background-size:110%;background-position:center;border-radius:10px;padding:10px;line-height:10px;text-transform:uppercase;letter-spacing:0.1em;box-shadow:0px 0px 0px 3px rgba(233,233,233,0.9), inset 0px 40px 0px rgba(30,30,30,.1);display:flex;width:fit-content;max-width:300px;float:left;margin-left:6.5%;margin-top:70px;"><span style="text-decoration:none;color:#ededed;font-weight:600;text-shadow:0px 0px 5px rgba(30,30,30,.1);">세연</span></div>
 	<div style="margin-top:70px;float:right;width:fit-content;max-width:100%;background-color:#494949;border-radius:5px 0px 0px 5px;padding:10px;line-height:10px;letter-spacing:0.25em;text-transform:uppercase;color:#d5d5d5;font-size:0.7em;">내면, 챗사오</div>
 	<div style="padding:20px 7%;line-height:22px;letter-spacing:.35px;margin-top:90px;">
+
+		<p>
+			<br>
+		</p>
 
 		<p><span style="color:#3b3445;">세연은 소유의 따뜻함이 자신을 감싸는 느낌에 숨을 헐떡이며 잠시 얼어붙었다. 이 종이 세계에서도, 스케치된 팔이 자신을 감싸는 믿을 수 없을 정도로 부드러운 질감 속에서도, 그녀는 그것을 느낄 수 있었다. 깊고 부인할 수 없는 존재감, 심장 박동 사이에 속삭여지는 약속을.</span></p>
 
