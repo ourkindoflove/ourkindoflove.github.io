@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: ourkindoflove/ourkindoflove.github.io
+  branch: main
+
+media_folder: "assets/img/posts"
+public_folder: "/assets/img/posts"
+
+locale: ko
+
+collections:
+  - name: "posts"
+    label: "포스트"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.slug}}"
+    fields:
+      - {label: "제목", name: "title", widget: "string"}
+      - {label: "영문 슬러그", name: "slug", widget: "string", hint: "URL에 들어갈 이름. 예: Interview"}
+      - {label: "날짜", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss +0900"}
+      - {label: "카테고리", name: "categories", widget: "list", default: ["SL"]}
+      - {label: "태그", name: "tags", widget: "list"}
+      - {label: "한 줄 설명", name: "description", widget: "string"}
+      - {label: "본문", name: "body", widget: "markdown"}
