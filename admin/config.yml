@@ -21,4 +21,5 @@ collections:
       - {label: "카테고리", name: "categories", widget: "list", default: ["SL"]}
       - {label: "태그", name: "tags", widget: "list"}
       - {label: "한 줄 설명", name: "description", widget: "string"}
+      - {label: "공개", name: "published", widget: "boolean", default: true, required: false, hint: "끄면 초안이에요. 블로그에 보이지 않아요(블로그로 보내기 플러그인은 기본으로 초안으로 올려요)."}
       - {label: "본문", name: "body", widget: "markdown"}
