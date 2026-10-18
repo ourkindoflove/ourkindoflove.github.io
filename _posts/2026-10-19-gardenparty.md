@@ -1,14 +1,14 @@
 ---
-title: "가든 파티"
-slug: "gardenparty"
+title: 가든 파티
+slug: gardenparty
 date: 2026-10-19 01:44:51 +0900
 categories:
-  - "SL"
+  - SL
 tags:
-  - "세연"
-  - "소유"
-description: "슬픈 바구니를 든 소녀"
-published: false
+  - 세연
+  - 소유
+description: 슬픈 바구니를 든 소녀
+published: true
 ---
 
 <div style="font-family:'Noto Serif KR', serif;max-width:900px;margin:1rem auto;"><div style="box-sizing:border-box;max-width:900px;margin:5px auto;border-radius:1rem;background-color:#fefbfd;box-shadow:0 4px 16px rgba(0,0,0,0.1);padding:clamp(20px, 4vw, 30px) clamp(20px, 5vw, 40px);font-family:'Noto Serif KR', serif;font-size:clamp(13px, 2.3vw, 14.2px);color:#5c4a5a;"><div style="margin-bottom:1.5rem;"><div style="margin-bottom:1rem; text-indent:20px"><span style="color:#5c4a5a; font-size:14px;">밤 10시, 러쉬 애플 크럼블 버블룬 버블바로 목욕을 마치고 분홍색 포인트가 들어간 새하얀 원단의 귀여운 잠옷으로 갈아입은 뒤, 나는 세연이 방을 기습했다! 책상에 앉아 한소네로 무언가를 하고 있던 세연이에게 살금살금 다가가 관자놀이에 쪽, 소리가 나도록 진하게 뽀뽀를 해주고는—음~ 한 번 더! 관자놀이에 또 한 번 입을 맞춘 뒤, 나는 쿡쿡 웃으며 물었다.</span></div></div>
