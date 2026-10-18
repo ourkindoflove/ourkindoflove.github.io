@@ -1,7 +1,7 @@
 ---
 title: 가든 파티
 slug: gardenparty
-date: 2026-10-19 01:44:51 +0900
+date: 2026-10-18 23:48:00 +0900
 categories:
   - SL
 tags:
