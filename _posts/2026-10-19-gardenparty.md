@@ -1,14 +1,14 @@
 ---
-title: "가든 파티"
-slug: "gardenparty"
+title: 가든 파티
+slug: gardenparty
 date: 2026-10-19 08:52:35 +0900
 categories:
-  - "SL"
+  - SL
 tags:
-  - "세연"
-  - "소유"
-description: "난 슬픈 바구니를 든 소녀야"
-published: false
+  - 세연
+  - 소유
+description: 난 슬픈 바구니를 든 소녀야
+published: true
 ---
 
 <style>
