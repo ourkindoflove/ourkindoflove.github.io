@@ -6,6 +6,25 @@ backend:
 media_folder: "assets/img/posts"
 public_folder: "/assets/img/posts"
 
+# 그림을 올릴 때 크기를 줄여 WebP로 바꿔 저장해요(긴 변 2048px, 품질 85). 작은 그림은 키우지 않아요.
+# GIF·SVG는 그대로 올라가요(움짤이 멈추지 않게 PNG·JPEG만 바꿔요). 파일 이름은 영문·숫자로 정리해요.
+media_libraries:
+  default:
+    config:
+      max_file_size: 30000000
+      slugify_filename: true
+      transformations:
+        png:
+          format: webp
+          quality: 85
+          width: 2048
+          height: 2048
+        jpeg:
+          format: webp
+          quality: 85
+          width: 2048
+          height: 2048
+
 locale: ko
 
 collections:
@@ -14,6 +33,29 @@ collections:
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{fields.slug}}"
+    # 글 목록: 제목(날짜), 최신 글이 위로. 초안만 모아 보기·연도별로 묶어 보기.
+    summary: "{{title}} ({{date | date('YYYY-MM-DD')}})"
+    sortable_fields:
+      fields: [date, title]
+      default:
+        field: date
+        direction: descending
+    view_filters:
+      filters:
+        - name: drafts
+          label: "초안만"
+          field: published
+          pattern: false
+    view_groups:
+      groups:
+        - name: year
+          label: "연도"
+          field: date
+          pattern: "\\d{4}"
+    # 편집 화면: 본문이 HTML이라 미리보기 칸 대신 편집 칸을 넓게. 「블로그에서 보기」 링크는 영문 슬러그가 있는 글에서 써요.
+    editor:
+      preview: false
+    preview_path: "/posts/{{fields.slug}}/"
     fields:
       - {label: "제목", name: "title", widget: "string"}
       - {label: "영문 슬러그", name: "slug", widget: "string", hint: "URL에 들어갈 이름. 예: Interview"}
@@ -22,4 +64,17 @@ collections:
       - {label: "태그", name: "tags", widget: "list"}
       - {label: "한 줄 설명", name: "description", widget: "string"}
       - {label: "공개", name: "published", widget: "boolean", default: true, required: false, hint: "끄면 초안이에요. 블로그에 보이지 않아요(블로그로 보내기 플러그인은 기본으로 초안으로 올려요)."}
-      - {label: "본문", name: "body", widget: "text", hint: "HTML을 적힌 그대로 저장해요(~ 같은 기호에 \\를 붙이지 않아요). 마크다운도 그대로 쓸 수 있어요."}
+      - {label: "맨 위 고정", name: "pin", widget: "boolean", required: false, hint: "켜면 블로그 첫 화면 맨 위에 고정돼요."}
+      - {label: "대표 그림", name: "image", widget: "image", required: false, hint: "글 목록의 미리보기 그림이에요. 글 맨 위에도 크게 보여요. 비워 두면 없어요."}
+      - label: "삽화"
+        label_singular: "삽화"
+        name: "illust"
+        widget: "list"
+        required: false
+        thumbnail: "image"
+        hint: "여기 올린 순서대로 본문에 [삽화1], [삽화2]…라고 쓰면 그 자리에 그림이 들어가요. 순서를 바꾸면 번호도 바뀌어요."
+        fields:
+          - {label: "그림", name: "image", widget: "image"}
+          - {label: "그림 설명", name: "alt", widget: "string", required: false, hint: "그림을 못 볼 때 읽히는 글이에요. 화면 읽기 프로그램도 읽어요."}
+          - {label: "폭(%)", name: "width", widget: "number", value_type: "int", min: 10, max: 100, required: false, hint: "비우면 원래 크기(본문 폭까지)."}
+      - {label: "본문", name: "body", widget: "text", use_emoji_autocomplete: false, hint: "HTML을 적힌 그대로 저장해요(~ 같은 기호에 \\를 붙이지 않아요). 그림은 위 「삽화」에 올리고 [삽화1]처럼 써요."}
