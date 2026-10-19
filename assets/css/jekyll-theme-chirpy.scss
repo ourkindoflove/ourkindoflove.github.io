@@ -190,3 +190,15 @@ a.post-tag.no-text-decoration:hover {
 a.tag {
   transition: all 0.3s ease;
 }
+
+/* 폭을 퍼센트로 준 본문 그림(조각 로그 감정 그림 width:40%, 삽화 폭 등)은 본문 폭을 기준으로.
+   Chirpy가 그림마다 씌우는 확대용 감싸개(a.img-link)는 내용 크기만큼만 줄어드는 상자(inline-flex)라,
+   그 안의 40%는 "감싸개의 40%"가 되어 그림이 아주 작아졌다(350px 그림 → 140px). */
+.content a.img-link:has(> img[style^="width"]),
+.content a.img-link:has(> img[style*="; width"]),
+.content a.img-link:has(> img[style*=";width"]) {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+

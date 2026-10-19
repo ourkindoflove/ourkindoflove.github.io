@@ -181,8 +181,9 @@ script_includes:
 </article>
 
 <script>
-  // BlogPush 상태창(.bp-risu)이 본문 폭보다 넓으면 비율 그대로 줄인다.
-  // 리스 상태창 CSS는 폭을 em으로 고정하는 일이 많아(예: 47em) 데스크톱의 좁은 카드 안에서 오른쪽이 잘렸다.
+  /* BlogPush 상태창(.bp-risu)이 본문 폭보다 넓으면 비율 그대로 줄인다.
+     리스 상태창 CSS는 폭을 em으로 고정하는 일이 많아(예: 47em) 데스크톱의 좁은 카드 안에서 오른쪽이 잘렸다.
+     배포 빌드는 HTML을 한 줄로 압축하므로 // 주석을 쓰면 뒤 코드가 모두 주석이 된다 — 꼭 이 형식으로. */
   (function () {
     function fit() {
       document.querySelectorAll('.bp-risu').forEach(function (el) {

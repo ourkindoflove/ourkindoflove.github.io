@@ -12,6 +12,8 @@
 (function () {
   'use strict';
 
+  // 블로그(Chirpy)가 모든 본문 그림에 주는 기본값: 칸 폭까지만, 비율 유지. 이게 없으면 큰 삽화가 원래 크기로 카드 밖까지 나간다.
+  var PREVIEW_CSS = '.blog-preview img { max-width: 100%; height: auto; }';
   var MARKER = /\\?\[\s*삽화\s*(\d+)\s*\\?\]/g;
   var MD_IMAGE = /!\[([^\]\n]*)\]\(\s*([^\s()]+)(?:\s+(?:"[^"]*"|'[^']*'))?\s*\)/g;
 
@@ -87,7 +89,8 @@
       var entry = this.props.entry;
       var cover = entry.getIn(['data', 'image']);
       var description = entry.getIn(['data', 'description']);
-      return h('div', { style: { maxWidth: '860px', margin: '0 auto', fontFamily: "'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif", lineHeight: 1.7, color: '#34343c' } },
+      return h('div', { className: 'blog-preview', style: { maxWidth: '860px', margin: '0 auto', fontFamily: "'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif", lineHeight: 1.7, color: '#34343c' } },
+        h('style', null, PREVIEW_CSS),
         h('h1', { style: { fontSize: '1.9em', fontWeight: 400, margin: '0.4em 0 0.2em' } }, entry.getIn(['data', 'title']) || ''),
         description ? h('p', { style: { color: '#6c757d', margin: '0 0 1em' } }, description) : null,
         cover ? h('img', { src: assetUrl(this.props.getAsset, cover), alt: '', style: { width: '100%', borderRadius: '6px', margin: '0 0 1.5em' } }) : null,
