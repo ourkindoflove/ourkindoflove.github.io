@@ -13,7 +13,7 @@ pin: false
 image: /assets/img/posts/artist_anzu-o6v6o-0.5__artist_otintin-artist_2pineapplepizza__-0.8__jacknif-s-3181538797.webp
 illust:
   - image: /assets/img/posts/magazine-shot-artist_anzu-o6v6o-0.5__artist_otintin-artist_2pineapplepizza_-s-1982654540.webp
-    alt: 귀여운쇼유
+    alt: 귀여운소유
     width: null
 ---
 
