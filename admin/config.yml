@@ -52,9 +52,8 @@ collections:
           label: "연도"
           field: date
           pattern: "\\d{4}"
-    # 편집 화면: 본문이 HTML이라 미리보기 칸 대신 편집 칸을 넓게. 「블로그에서 보기」 링크는 영문 슬러그가 있는 글에서 써요.
-    editor:
-      preview: false
+    # 편집 화면 오른쪽 미리보기는 admin/preview.js가 본문 HTML을 블로그처럼 그려요.
+    # 「블로그에서 보기」 링크는 영문 슬러그가 있는 글에서 써요.
     preview_path: "/posts/{{fields.slug}}/"
     fields:
       - {label: "제목", name: "title", widget: "string"}
