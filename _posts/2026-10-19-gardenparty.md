@@ -9,6 +9,9 @@ tags:
   - 소유
 description: 슬픈 바구니를 든 소녀
 published: true
+pin: false
+image: /assets/img/posts/artist_anzu-o6v6o-0.5__artist_otintin-artist_2pineapplepizza__-0.8__jacknif-s-3181538797.webp
+illust: []
 ---
 
 <style>
