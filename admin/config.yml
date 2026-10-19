@@ -22,4 +22,4 @@ collections:
       - {label: "태그", name: "tags", widget: "list"}
       - {label: "한 줄 설명", name: "description", widget: "string"}
       - {label: "공개", name: "published", widget: "boolean", default: true, required: false, hint: "끄면 초안이에요. 블로그에 보이지 않아요(블로그로 보내기 플러그인은 기본으로 초안으로 올려요)."}
-      - {label: "본문", name: "body", widget: "markdown"}
+      - {label: "본문", name: "body", widget: "text", hint: "HTML을 적힌 그대로 저장해요(~ 같은 기호에 \\를 붙이지 않아요). 마크다운도 그대로 쓸 수 있어요."}
